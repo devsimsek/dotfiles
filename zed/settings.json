@@ -12,4 +12,27 @@
   },
   "autosave": "on_focus_change",
   "vim_mode": true, // disable when feeling like it.
+  "lsp": {
+    "gopls": {
+      // remove if not using go
+      "gofumpt": true,
+      "initialization_options": {
+        "directoryFilters": ["-**/node_modules", "-**/.git"],
+        "gofumpt": true,
+        "symbolScope": "workspace",
+        "staticcheck": true,
+        "templateExtensions": ["tmpl"],
+        "analyses": {
+          "nilness": true,
+          "unusedparams": true,
+          "unusedvariable": true,
+          "unusedwrite": true,
+          "useany": true
+        },
+        "codelenses": {
+          "gc_details": true
+        }
+      }
+    }
+  }
 }
