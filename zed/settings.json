@@ -1,0 +1,15 @@
+{
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "Rosé Pine Dawn", // remove if not using go
+    "dark": "Rosé Pine Moon"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "autosave": "on_focus_change",
+  "vim_mode": true, // disable when feeling like it.
+}
