@@ -3,8 +3,8 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Rosé Pine Dawn", // remove if not using go
-    "dark": "Rosé Pine Moon"
+    "light": "Rosé Pine Dawn",
+    "dark": "Rosé Pine Moon" // Rosé Pine Moon is also a beautiful theme, check it out.
   },
   "telemetry": {
     "diagnostics": false,
