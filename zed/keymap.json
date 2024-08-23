@@ -8,6 +8,7 @@
   {
     "context": "Editor",
     "bindings": {
+      "cmd-i": "workspace::ToggleZoom",
       "ctrl->": "zed::IncreaseBufferFontSize",
       "ctrl-<": "zed::DecreaseBufferFontSize",
       "ctrl-shift-j": "editor::JoinLines",
