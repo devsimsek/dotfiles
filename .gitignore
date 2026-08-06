@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+
+# Editors
+.idea/
+.vscode/
+*.iml
+
+# Logs & caches
+*.log
+*.cache
+__pycache__/
+*.pyc
+
+# Local / personal overrides (keep these out of the repo)
+*.local
+.env

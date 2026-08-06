@@ -1,0 +1,45 @@
+// Hi there young fella!
+// This file contains how I use zed and alter with its
+// core features.
+//
+// I'll add small documentation here soon :)
+{
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "context_server_timeout": 120,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "disable_ai": true, // I keep this true because I don't like to interact with ai often. This allows me to enable it when i experiment or run human benchmarks :)
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "base_keymap": "JetBrains",
+  "autosave": "on_focus_change",
+  "format_on_save": "off",
+  "ui_font_size": 14,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "theme": {
+    "mode": "dark",
+    "light": "Rosé Pine Dawn",
+    "dark": "Rosé Pine Moon"
+  }
+}
