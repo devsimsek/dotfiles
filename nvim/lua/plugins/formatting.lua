@@ -25,7 +25,7 @@ return {
           ["terraform-vars"] = { "terraform_fmt" },
           hcl = { "terraform_fmt" },
           text = { "prettier" },
-          go = { "gofumpt", "goimports" },
+          go = { "goimports", "gofmt" },
           c = { "clang_format" },
           cpp = { "clang_format" },
           rust = { "rustfmt" },
@@ -37,7 +37,7 @@ return {
           sql = { "sqlformat" },
         },
         format_on_save = {
-          timeout_ms = 500,
+          timeout_ms = 3000,
           lsp_fallback = true,
         },
       })

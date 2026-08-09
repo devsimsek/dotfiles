@@ -47,6 +47,7 @@ needs the footer.
 - **tpm** — the plugin manager itself.
 - **tmux-sensible** — the "you're welcome" defaults.
 - **tmux-resurrect** — restores your precious windows.
-- **tmux-continuum** — auto-saves and auto-restores, so you never lose a session.
+- **tmux-continuum** — auto-saves every 15 minutes and auto-restores your last
+  session on start (`@continuum-restore 'on'`), so you never lose a session.
 
 See [keymaps.md](./keymaps.md) for the plugin shortcuts (`C-b Ctrl-s` / `C-b Ctrl-r`).

@@ -2,13 +2,16 @@ local opt = vim.opt
 
 opt.termguicolors = true
 
+-- Shell PATH includes Go & other tool bins
+vim.env.PATH = vim.fn.expand("~/go/bin") .. ":" .. vim.env.PATH
+
 opt.number = true
 opt.relativenumber = true
 
 opt.cursorline = true
 opt.expandtab = true
-opt.shiftwidth = 4
-opt.tabstop = 4
+opt.shiftwidth = 2
+opt.tabstop = 2
 
 opt.smartindent = true
 opt.wrap = false

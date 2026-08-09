@@ -34,6 +34,12 @@ map("n", "[b", ":bprevious<CR>", desc("Previous buffer"))
 map("n", "]b", ":bnext<CR>", desc("Next buffer"))
 map("n", "<leader>bd", ":bdelete<CR>", desc("Delete buffer"))
 
+-- Tab navigation
+map("n", "<leader>tn", ":tabnew<CR>", desc("New tab"))
+map("n", "<leader>tl", ":tabnext<CR>", desc("Next tab"))
+map("n", "<leader>th", ":tabprevious<CR>", desc("Previous tab"))
+map("n", "<leader>tc", ":tabclose<CR>", desc("Close tab"))
+
 -- Search & replace
 map("n", "<leader>sr", ":%s/", desc("Replace (file)"))
 map("v", "<leader>sr", ":s/", desc("Replace (selection)"))

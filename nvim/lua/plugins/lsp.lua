@@ -51,6 +51,9 @@ return {
           local bufnr = args.buf
 
           vim.keymap.set("n", "gd", vim.lsp.buf.definition, vim.tbl_extend("keep", { buffer = bufnr }, { desc = "Go to definition" }))
+          vim.keymap.set("n", "<leader>pd", function()
+            require("telescope.builtin").lsp_definitions()
+          end, vim.tbl_extend("keep", { buffer = bufnr }, { desc = "Peek definition" }))
           vim.keymap.set("n", "gr", vim.lsp.buf.references, vim.tbl_extend("keep", { buffer = bufnr }, { desc = "Go to references" }))
           vim.keymap.set("n", "gi", vim.lsp.buf.implementation, vim.tbl_extend("keep", { buffer = bufnr }, { desc = "Go to implementation" }))
           vim.keymap.set("n", "K", vim.lsp.buf.hover, vim.tbl_extend("keep", { buffer = bufnr }, { desc = "Hover docs" }))

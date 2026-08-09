@@ -41,6 +41,15 @@
 | `]b` | Normal | Next buffer |
 | `<leader>bd` | Normal | Delete current buffer |
 
+## Tab Navigation
+
+| Keymap | Mode | Action |
+|--------|------|--------|
+| `<leader>tn` | Normal | New tab |
+| `<leader>tl` | Normal | Next tab |
+| `<leader>th` | Normal | Previous tab |
+| `<leader>tc` | Normal | Close tab |
+
 ## Search & Replace
 
 | Keymap | Mode | Action |
@@ -112,6 +121,7 @@ Inside Telescope: `<C-d>` toggles hidden files, `<C-h>` shows key help.
 | Keymap | Mode | Action |
 |--------|------|--------|
 | `gd` | Normal | Go to definition |
+| `<leader>pd` | Normal | Peek definition (telescope) |
 | `gr` | Normal | Go to references |
 | `gi` | Normal | Go to implementation |
 | `K` | Normal | Hover (show documentation) |

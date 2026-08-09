@@ -34,12 +34,14 @@ brew install terraform
 
 ## Go (the language with a cute mascot)
 ```bash
-go install mvdan.cc/gofumpt@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install github.com/fatih/gomodifytags@latest
 go install github.com/davidrjenni/cmd/gofillstruct@latest
 go install github.com/josharian/impl@latest
 ```
+
+`gofmt` ships with the toolchain itself — no install needed. conform runs
+`goimports` first, then `gofmt`.
 
 ## C / C++ (the pain never ends)
 ```bash
@@ -71,6 +73,6 @@ pip install sqlparse
 
 ---
 
-**Quick verify**: `black --version`, `prettier --version`, `stylua --version`, `csharpier --version`, `pint --version`, `terraform version`, `gofumpt -version`, `clang-format --version`, `rustfmt --version`, `shfmt --version`, `taplo --version`, `sqlformat --version`
+**Quick verify**: `black --version`, `prettier --version`, `stylua --version`, `csharpier --version`, `pint --version`, `terraform version`, `gofmt -version`, `clang-format --version`, `rustfmt --version`, `shfmt --version`, `taplo --version`, `sqlformat --version`
 
 Auto-formats on save. Use `<leader>fm` to manually format. Or you can always check keymaps.md for more details.

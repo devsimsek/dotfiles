@@ -15,7 +15,7 @@ This subdirectory of my dotfiles repository contains (as you have guessed it!) t
 
   lua/
     core/
-      options.lua           # all the vim.opt stuff - line numbers, tabs, etc.
+      options.lua           # all the vim.opt stuff - line numbers, tabs, PATH, etc.
       keymap.lua            # custom keybindings (leader = space, btw)
       auto.lua              # autocmds - yank highlight, trailing whitespace purge
 
@@ -24,6 +24,7 @@ This subdirectory of my dotfiles repository contains (as you have guessed it!) t
       themes.lua            # rose-pine because we have taste
       lsp.lua               # mason + lspconfig (so many LS servers omg)
       completion.lua        # nvim-cmp + LuaSnip (tab to expand, tab to rule)
+      editorconfig.lua      # editorconfig.nvim (respects .editorconfig files)
       treesitter.lua        # syntax highlighting that actually works
       navigation.lua        # telescope (ripgrep-powered fuzzy everything)
       explorer.lua          # nvim-tree (it's like NERDTree but modern)
@@ -55,7 +56,7 @@ This subdirectory of my dotfiles repository contains (as you have guessed it!) t
 | Markdown | - | prettier | markdown, markdown_inline |
 | C# | omnisharp | csharpier | c_sharp |
 | PHP | phpactor | pint | php |
-| Go | gopls | gofumpt + goimports | go, gomod, gowork |
+| Go | gopls | goimports + gofmt | go, gomod, gowork |
 | C / C++ | clangd | clang-format | c, cpp |
 | Rust | rust_analyzer | rustfmt | rust |
 | Shell (bash/sh/zsh) | bashls | shfmt | bash |

@@ -35,6 +35,7 @@ require("lazy").setup({
   { "nvim-telescope/telescope.nvim" },
 
   -- Load our config modules
+  { import = "plugins.editorconfig" },
   { import = "plugins.themes" },
   { import = "plugins.lsp" },
   { import = "plugins.completion" },
