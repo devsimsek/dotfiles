@@ -84,7 +84,7 @@ something here doesn't do what you expect, blame Zed, not me.
 | `cmd-)` | Increase buffer font size |
 | `cmd-_` | Decrease buffer font size |
 
-## Editor — full screen (`mode == full`)
+## Editor - full screen (`mode == full`)
 
 | Keymap | Action |
 |--------|--------|
@@ -94,7 +94,7 @@ something here doesn't do what you expect, blame Zed, not me.
 | `cmd-l` | Toggle go-to-line |
 | `alt-enter` | Toggle code actions |
 
-> Note: `cmd-r` (search/replace deploy) is unbound here — you can still get to
+> Note: `cmd-r` (search/replace deploy) is unbound here - you can still get to
 > it with `cmd-shift-r`.
 
 ## Workspace

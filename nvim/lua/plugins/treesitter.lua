@@ -1,44 +1,25 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    branch = "master",
     build = ":TSUpdate",
     event = { "BufReadPost", "BufNewFile" },
-    main = "nvim-treesitter.configs",
+    main = "nvim-treesitter.config",
     opts = {
-      ensure_installed = {
-        "c_sharp",
-        "php",
-        "html",
-        "javascript",
-        "typescript",
-        "tsx",
-        "css",
-        "scss",
-        "python",
-        "lua",
-        "json",
-        "yaml",
-        "json5",
-        "markdown",
-        "markdown_inline",
-        "terraform",
-        "hcl",
-        "go",
-        "gomod",
-        "gowork",
-        "c",
-        "cpp",
-        "rust",
-        "bash",
-        "dockerfile",
-        "toml",
-        "sql",
-        "regex",
-        "vim",
-      },
-      highlight = { enable = true },
-      indent = { enable = true },
+      install_dir = vim.fn.stdpath("data") .. "/site",
     },
+    config = function(_, opts)
+      require("nvim-treesitter.config").setup(opts)
+
+      vim.schedule(function()
+        local ts = require("nvim-treesitter")
+        ts.install({
+          "c_sharp", "php", "html", "javascript", "typescript", "tsx",
+          "css", "scss", "python", "lua", "json", "yaml", "json5",
+          "markdown", "markdown_inline", "terraform", "hcl",
+          "go", "gomod", "gowork", "c", "cpp", "rust", "bash",
+          "dockerfile", "toml", "sql", "regex", "vim",
+        })
+      end)
+    end,
   },
 }

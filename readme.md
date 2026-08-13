@@ -1,7 +1,7 @@
 # devsimsek's dotfiles
 
 Welcome to the place where my machines call home. This repository holds the
-configuration that follows me around — a terminal that looks nice, an editor
+configuration that follows me around - a terminal that looks nice, an editor
 that stays out of my way, a tmux that splits things the way I like, and a
 fastfetch logo that does absolutely nothing except look pretty.
 
@@ -13,7 +13,7 @@ separately.
 
 | Tool | What it is | Docs |
 |------|------------|------|
-| [nvim](./nvim/) | Neovim config — Lazy, Mason, treesitter, the works | [docs/nvim](./docs/nvim/) |
+| [nvim](./nvim/) | Neovim config - Lazy, Mason, treesitter, the works | [docs/nvim](./docs/nvim/) |
 | [ghostty](./ghostty/) | My terminal emulator of choice (Rosé Pine Moon, obviously) | [docs/ghostty](./docs/ghostty/) |
 | [tmux](./.tmux.conf) | Terminal multiplexer config (prefix `C-b`, Rosé Pine Moon status) | [docs/tmux](./docs/tmux/) |
 | [zed](./zed/) | Full-fledged editor for when I want to sit down properly | [docs/zed](./docs/zed/) |
@@ -33,7 +33,7 @@ ln -s ~/dotfiles/fastfetch ~/.config/fastfetch
 ln -s ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 ```
 
-Zed reads its config from `~/.config/zed/` — copy the `zed/zed/` contents over,
+Zed reads its config from `~/.config/zed/` - copy the `zed/zed/` contents over,
 or symlink the whole thing if you're feeling spicy.
 
 ## The theme
@@ -45,9 +45,9 @@ theme, it's Rosé Pine Moon. No you cannot change my mind.
 
 - [fastfetch](./docs/fastfetch/readme.md)
 - [ghostty](./docs/ghostty/readme.md)
-- [nvim](./docs/nvim/readme.md) — including [keymaps](./docs/nvim/keymaps.md) and [formatters](./docs/nvim/formatters.md)
-- [tmux](./docs/tmux/readme.md) — including [keymaps](./docs/tmux/keymaps.md)
-- [zed](./docs/zed/readme.md) — including [keymaps](./docs/zed/keymaps.md)
+- [nvim](./docs/nvim/readme.md) - including [keymaps](./docs/nvim/keymaps.md) and [formatters](./docs/nvim/formatters.md)
+- [tmux](./docs/tmux/readme.md) - including [keymaps](./docs/tmux/keymaps.md)
+- [zed](./docs/zed/readme.md) - including [keymaps](./docs/zed/keymaps.md)
 - [starship](./docs/starship/readme.md)
 
 ## License
@@ -56,5 +56,5 @@ See [`license`](./license).
 
 ## Credits
 
-Me. Also the very nice people who built the tools I leech off of — check each
+Me. Also the very nice people who built the tools I leech off of - check each
 sub-directory's docs for the ones I actually use.

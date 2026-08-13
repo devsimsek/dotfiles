@@ -28,27 +28,32 @@ For bash:
 eval "$(starship init bash)"
 ```
 
-For fish, you'd `starship init fish | source` — but let's not get weird.
+For fish, you'd `starship init fish | source` - but let's not get weird.
 
 ## What's on the prompt
 
 `user@host:directory ⌘git-branch git-status⇡⇣ python cmd-duration` then a `λ`.
 
-- **user@host** — green and bold, because I'm important. Shows always.
-- **directory** — truncated to 15 segments, collapsed into the repo root when
+- **user@host** - green and bold, because I'm important. Shows always.
+- **directory** - truncated to 15 segments, collapsed into the repo root when
   you're inside a git repo. `…/` means you wandered off.
-- **git** — branch (25 chars max), and status: `++(n)` for staged, `⇡`/`⇣`
+- **git** - branch (25 chars max), and status: `++(n)` for staged, `⇡`/`⇣`
   for ahead/behind. `⇕` when you've done both because you're living dangerously.
-- **python** — only shows once you're in a venv, because global python versions
+- **python** - only shows once you're in a venv, because global python versions
   are a lie.
-- **cmd_duration** — only appears if a command took more than 500ms. Yellow.
-- **λ** — green if your last command succeeded, red if it didn't. Blame it,
+- **cmd_duration** - only appears if a command took more than 500ms. Yellow.
+- **λ** - green if your last command succeeded, red if it didn't. Blame it,
   not the code.
 
 ## Opt-outs
 
-aws, docker_context, gcloud and nodejs modules are all disabled. I don't need
-a cloud provider logo haunting my every keystroke.
+aws, docker_context, gcloud, nodejs and php modules are all disabled. I don't
+need a cloud provider logo - or a PHP version - haunting my every keystroke.
+
+## Tuning
+
+`command_timeout` is set to 3000ms instead of the default 500ms, so slow git
+repos and lazily-mounted drives don't make your prompt lie about being ready.
 
 ## Debugging
 

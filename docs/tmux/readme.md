@@ -2,7 +2,7 @@
 
 tmux. The thing that keeps my sessions alive when my will to live is fading.
 This config lives in a single `.tmux.conf` because, let's be honest, tmux
-doesn't need a framework — it needs good taste, and I'm wearing Rosé Pine Moon
+doesn't need a framework - it needs good taste, and I'm wearing Rosé Pine Moon
 head to toe.
 
 ## Setup
@@ -30,7 +30,7 @@ steer you between panes, and Ctrl+Alt+Arrows resize them.
 
 ## Behaviour
 
-- Base index starts at **1** (windows and panes) — we're not savages.
+- Base index starts at **1** (windows and panes) - we're not savages.
 - Windows auto-rename themselves so your bar doesn't turn into a graveyard of
   `zsh`es.
 - Mouse on, because who has time for `C-b %`.
@@ -44,10 +44,10 @@ needs the footer.
 
 ## Plugins
 
-- **tpm** — the plugin manager itself.
-- **tmux-sensible** — the "you're welcome" defaults.
-- **tmux-resurrect** — restores your precious windows.
-- **tmux-continuum** — auto-saves every 15 minutes and auto-restores your last
+- **tpm** - the plugin manager itself.
+- **tmux-sensible** - the "you're welcome" defaults.
+- **tmux-resurrect** - restores your precious windows.
+- **tmux-continuum** - auto-saves every 15 minutes and auto-restores your last
   session on start (`@continuum-restore 'on'`), so you never lose a session.
 
 See [keymaps.md](./keymaps.md) for the plugin shortcuts (`C-b Ctrl-s` / `C-b Ctrl-r`).

@@ -40,7 +40,7 @@ go install github.com/davidrjenni/cmd/gofillstruct@latest
 go install github.com/josharian/impl@latest
 ```
 
-`gofmt` ships with the toolchain itself — no install needed. conform runs
+`gofmt` ships with the toolchain itself - no install needed. conform runs
 `goimports` first, then `gofmt`.
 
 ## C / C++ (the pain never ends)
@@ -59,7 +59,7 @@ brew install shfmt
 ```
 
 ## Dockerfile
-No extra tool needed — `conform` uses its built-in injected formatter for this one.
+No extra tool needed - `conform` uses its built-in injected formatter for this one.
 
 ## TOML
 ```bash

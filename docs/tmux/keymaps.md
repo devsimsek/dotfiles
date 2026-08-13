@@ -1,6 +1,6 @@
 # tmux Keymaps Reference
 
-Prefix is `C-b`. The default `%` and `"` splits are unbound — we do things our
+Prefix is `C-b`. The default `%` and `"` splits are unbound - we do things our
 own way around here.
 
 ## Session / General
