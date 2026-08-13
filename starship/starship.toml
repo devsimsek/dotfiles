@@ -18,7 +18,7 @@ add_newline = true
 # standalone format to get os glyph on ps1 line,
 # prompt character below
 format = """
-$os$username$hostname:$directory$git_branch$git_status$git_commit$python$cmd_duration
+$username$hostname: $directory$git_branch$git_status$git_commit$python$golang$cmd_duration
 $character
 """
 
@@ -71,6 +71,11 @@ format = '[$duration](bold yellow)'
 [python]
 python_binary = ["./venv/bin/python", "python3", "python", "python2"]
 
+# Show go version in Go projects (go.mod / *.go files)
+[golang]
+symbol = "🐹 "
+version_format = "v${raw}"
+
 [aws]
 disabled = true
 
@@ -87,8 +92,7 @@ disabled = true
 disabled = true
 
 [os]
-format = '[$symbol](bold white)'
-disabled = false
+disabled = true
 
 [os.symbols]
 Alpaquita = " "
@@ -140,3 +144,4 @@ Windows = "󰍲 "
 # Solus = "󰠳 "
 # Unknown = "? "
 # Windows = "󰍲 "
+
