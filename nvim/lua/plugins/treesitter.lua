@@ -2,13 +2,22 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    event = { "BufReadPost", "BufNewFile" },
+    lazy = false,
     main = "nvim-treesitter.config",
     opts = {
       install_dir = vim.fn.stdpath("data") .. "/site",
     },
     config = function(_, opts)
       require("nvim-treesitter.config").setup(opts)
+
+      -- Neovim 0.12 no longer auto-starts treesitter; kick it off per filetype
+      vim.api.nvim_create_autocmd("FileType", {
+        callback = function()
+          if vim.bo.buftype == "" then
+            vim.treesitter.start()
+          end
+        end,
+      })
 
       vim.schedule(function()
         local ts = require("nvim-treesitter")

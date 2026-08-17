@@ -107,7 +107,9 @@
 | `<leader>fs` | Normal | Document symbols (LSP) |
 | `<leader>fS` | Normal | Workspace symbols (LSP) |
 
-Inside Telescope: `<C-d>` toggles hidden files, `<C-h>` shows key help.
+Inside Telescope: `<C-d>` toggles hidden files, `<C-h>` shows key help. In
+`<leader>ff`, Enter opens the selected file, or creates it from your typed path
+when nothing matches. `<C-n>` always forces a new file from the typed path.
 
 ## File Explorer (Nvim Tree)
 

@@ -15,7 +15,7 @@ separately.
 |------|------------|------|
 | [nvim](./nvim/) | Neovim config - Lazy, Mason, treesitter, the works | [docs/nvim](./docs/nvim/) |
 | [ghostty](./ghostty/) | My terminal emulator of choice (Rosé Pine Moon, obviously) | [docs/ghostty](./docs/ghostty/) |
-| [tmux](./.tmux.conf) | Terminal multiplexer config (prefix `C-b`, Rosé Pine Moon status) | [docs/tmux](./docs/tmux/) |
+| [tmux](./tmux/) | Terminal multiplexer config (prefix `C-b`, Rosé Pine Moon status) | [docs/tmux](./docs/tmux/) |
 | [zed](./zed/) | Full-fledged editor for when I want to sit down properly | [docs/zed](./docs/zed/) |
 | [fastfetch](./fastfetch/) | A pretty logo + some system info. That's it. That's the post. | [docs/fastfetch](./docs/fastfetch/) |
 | [starship](./starship/) | The prompt that lets my terminal have a personality (`λ`, obviously) | [docs/starship](./docs/starship/) |
@@ -28,7 +28,7 @@ you like instead of adopting my entire personality. Symlink the bits you want:
 ```bash
 ln -s ~/dotfiles/nvim      ~/.config/nvim
 ln -s ~/dotfiles/ghostty   ~/.config/ghostty
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/fastfetch ~/.config/fastfetch
 ln -s ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 ```
@@ -45,8 +45,8 @@ theme, it's Rosé Pine Moon. No you cannot change my mind.
 
 - [fastfetch](./docs/fastfetch/readme.md)
 - [ghostty](./docs/ghostty/readme.md)
-- [nvim](./docs/nvim/readme.md) - including [keymaps](./docs/nvim/keymaps.md) and [formatters](./docs/nvim/formatters.md)
-- [tmux](./docs/tmux/readme.md) - including [keymaps](./docs/tmux/keymaps.md)
+- [nvim](./docs/nvim/readme.md) - including [tutorial](./docs/nvim/tutorial.md), [keymaps](./docs/nvim/keymaps.md) and [formatters](./docs/nvim/formatters.md)
+- [tmux](./docs/tmux/readme.md) - including [tutorial](./docs/tmux/tutorial.md) and [keymaps](./docs/tmux/keymaps.md)
 - [zed](./docs/zed/readme.md) - including [keymaps](./docs/zed/keymaps.md)
 - [starship](./docs/starship/readme.md)
 

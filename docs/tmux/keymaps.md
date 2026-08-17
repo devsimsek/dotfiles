@@ -3,6 +3,35 @@
 Prefix is `C-b`. The default `%` and `"` splits are unbound - we do things our
 own way around here.
 
+## The ones I actually use
+
+If you remember nothing else, remember these:
+
+| Keymap | Action |
+|--------|--------|
+| `\|` | Split window left/right |
+| `-` | Split window top/bottom |
+| `Alt+Arrow` | Move to the pane in that direction |
+| `Ctrl+Alt+Arrow` | Resize pane by 5 |
+| `Shift+Left` / `Shift+Right` | Previous / next window |
+| `C-b Ctrl-s` | Save session (resurrect) |
+| `C-b Ctrl-r` | Restore session (resurrect) |
+
+## Resurrect / Continuum (the important bit)
+
+tmux-resurrect saves and restores your sessions, tmux-continuum auto-saves
+every 15 minutes and auto-restores on start (`@continuum-restore 'on'`).
+`@resurrect-strategy-vim 'session'` is set so your vim sessions come back
+exactly where you left them, window by window.
+
+| Keymap | Action |
+|--------|--------|
+| `C-b Ctrl-s` | Save session now |
+| `C-b Ctrl-r` | Restore last saved session |
+
+Save before you shut down or jump machines. Restore when you're back. The
+auto-save means even the times you forget, tmux has your back.
+
 ## Session / General
 
 | Keymap | Action |
@@ -57,8 +86,3 @@ own way around here.
 |--------|--------|
 | `C-b I` | Install / update plugins (tpm) |
 | `C-b U` | Update plugins (tpm) |
-| `C-b Ctrl-s` | Save session (resurrect) |
-| `C-b Ctrl-r` | Restore session (resurrect) |
-
-> **tmux-continuum** auto-saves every 15 minutes and auto-restores on start, so
-> `C-b Ctrl-r` is more of a safety net than a habit.

@@ -4,6 +4,8 @@ Welcome to my own liberation of editors (incl. vi, emacs and nano - I used them 
 
 This subdirectory of my dotfiles repository contains (as you have guessed it!) the neovim-specific config. Out of the box, the repo ships **Mason**, **Lazy**, and a fully modular structure for you to program or customise it according to your taste. Batteries included, opinions sold separately.
 
+New here? Start with the [tutorial](./tutorial.md) - it covers word-jumping, creating files and splitting windows without the lecture. The [keymaps](./keymaps.md) and [formatters](./formatters.md) are the reference material.
+
 ---
 
 ## Quick overview of what's in the box
@@ -25,7 +27,7 @@ This subdirectory of my dotfiles repository contains (as you have guessed it!) t
       lsp.lua               # mason + lspconfig (so many LS servers omg)
       completion.lua        # nvim-cmp + LuaSnip (tab to expand, tab to rule)
       editorconfig.lua      # editorconfig.nvim (respects .editorconfig files)
-      treesitter.lua        # syntax highlighting that actually works
+      treesitter.lua        # syntax highlighting that actually works (with a 0.12 auto-start shim)
       navigation.lua        # telescope (ripgrep-powered fuzzy everything)
       explorer.lua          # nvim-tree (it's like NERDTree but modern)
       git.lua               # gitsigns (blame, diff hunks, the works)

@@ -5,6 +5,11 @@ This config lives in a single `.tmux.conf` because, let's be honest, tmux
 doesn't need a framework - it needs good taste, and I'm wearing Rosé Pine Moon
 head to toe.
 
+New here? Read the [tutorial](./tutorial.md) first - it walks you through
+splitting panes and resurrecting sessions. The [keymaps](./keymaps.md) is the
+full reference, and the `Ctrl-s` / `Ctrl-r` resurrect magic is the part worth
+memorising.
+
 ## Setup
 
 Install [tpm](https://github.com/tmux-plugins/tpm) first (the plugins won't
@@ -12,7 +17,7 @@ load without it), then symlink or copy the config:
 
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 ```
 

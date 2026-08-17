@@ -27,7 +27,47 @@ return {
           },
         },
         pickers = {
-          find_files = { hidden = true },
+          find_files = {
+            hidden = true,
+            mappings = {
+              i = {
+                ["<CR>"] = function(prompt_bufnr)
+                  local actions = require("telescope.actions")
+                  local picker = require("telescope.actions.state").get_current_picker(prompt_bufnr)
+                  local path = picker:_get_prompt()
+                  if path == "" then
+                    actions.select_default(prompt_bufnr)
+                    return
+                  end
+                  local cwd = picker.cwd or vim.fn.getcwd()
+                  local target = path:match("^/") and path or cwd .. "/" .. path
+                  local exists = vim.uv.fs_stat(target) ~= nil
+                  local has_slash = path:find("/", 1, true) ~= nil
+                  local has_results = picker.manager and picker.manager:num_results() > 0
+                  if exists or (not has_slash and has_results) then
+                    actions.select_default(prompt_bufnr)
+                  else
+                    actions.close(prompt_bufnr)
+                    vim.fn.mkdir(vim.fn.fnamemodify(target, ":h"), "p")
+                    vim.cmd("edit " .. vim.fn.fnameescape(target))
+                  end
+                end,
+                ["<C-n>"] = function(prompt_bufnr)
+                  local actions = require("telescope.actions")
+                  local picker = require("telescope.actions.state").get_current_picker(prompt_bufnr)
+                  local path = picker:_get_prompt()
+                  if path == "" then
+                    return
+                  end
+                  actions.close(prompt_bufnr)
+                  local cwd = picker.cwd or vim.fn.getcwd()
+                  local target = path:match("^/") and path or cwd .. "/" .. path
+                  vim.fn.mkdir(vim.fn.fnamemodify(target, ":h"), "p")
+                  vim.cmd("edit " .. vim.fn.fnameescape(target))
+                end,
+              },
+            },
+          },
           live_grep = { additional_args = { "--hidden", "--glob=!node_modules/**" } },
         },
       })
