@@ -25,7 +25,7 @@ return {
           "dockerls",
           "yamlls",
           "jsonls",
-          "sqlls",
+          "sqls",
         },
         handlers = {
           function(server_name)

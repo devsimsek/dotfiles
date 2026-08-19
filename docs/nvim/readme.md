@@ -64,7 +64,7 @@ New here? Start with the [tutorial](./tutorial.md) - it covers word-jumping, cre
 | Shell (bash/sh/zsh) | bashls | shfmt | bash |
 | Dockerfile | dockerls | injected | dockerfile |
 | TOML | - | taplo | toml |
-| SQL | sqlls | sqlformat | sql |
+| SQL | sqls | sqlformat | sql |
 | Terraform / HCL | terraformls | terraform fmt | terraform, hcl |
 
 ---

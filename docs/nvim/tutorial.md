@@ -68,24 +68,29 @@ Hidden files included, dotfiles not filtered, it's all there.
 
 **3. The ancient way:** `:edit src/newfile.rs` then `<C-s>`.
 
-## Splitting windows
+## Window controls
 
-This config splits the way sane people do:
+The full window vocabulary, beyond just splitting:
 
 | Keys | What it does |
 |------|--------------|
 | `<leader>w-` | Split horizontally (new window below) |
 | `<leader>w\|` | Split vertically (new window to the right) |
 | `<C-h>` / `<C-j>` / `<C-k>` / `<C-l>` | Move to left / below / above / right window |
+| `<leader>w,` / `<leader>w.` | Shrink / grow the window width by 5 |
 | `<leader>we` | Make all windows equal size |
-| `<leader>w,` | Shrink the window width by 5 |
-| `<leader>w.` | Grow the window width by 5 |
 | `<leader>q` | Close the current window |
+| `[b` / `]b` | Previous / next buffer in the current window |
+| `<leader>bd` | Close (delete) the current buffer |
+| `<leader>tn` | Open a new tab |
+| `<leader>tl` / `<leader>th` | Next / previous tab |
+| `<leader>tc` | Close the current tab |
 
 So: `<leader>w|` to get an editor side by side, `<C-h>` / `<C-l>` to bounce
-between them, `<leader>we` when you've made a mess. The config sets
-`splitright` and `splitbelow`, so splits land where you'd expect them (right
-and below), not wherever vim's mood takes it.
+between them, `<leader>w,` / `<leader>w.` when a split is hogging too much
+room, `<leader>we` when you've made a mess. The config sets `splitright` and
+`splitbelow`, so splits land where you'd expect them (right and below), not
+wherever vim's mood takes it.
 
 ## The thirty second cheat sheet
 
