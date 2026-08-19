@@ -82,7 +82,7 @@ New here? Start with the [tutorial](./tutorial.md) - it covers word-jumping, cre
    ln -s ~/dotfiles/nvim ~/.config/nvim
    ```
 
-3. **Fire up nvim** - Lazy will bootstrap itself and install all plugins on first launch. Just wait for the magic.
+3. **Fire up nvim** - Lazy will bootstrap itself and install all plugins on first launch. Just wait for the magic. Treesitter parsers are installed by the `:TSUpdate` build hook (a plugin `build` step), so syntax highlighting is ready without any extra steps.
 
 4. **Install formatters** for the languages you use. See [formatters.md](./formatters.md) for per-lang instructions. TL;DR: `brew`, `npm`, `pip`, `go install`, `cargo`, `rustup`... the usual suspects.
 
