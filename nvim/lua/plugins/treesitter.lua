@@ -19,17 +19,6 @@ return {
           end
         end,
       })
-
-      vim.schedule(function()
-        local ts = require("nvim-treesitter")
-        ts.install({
-          "c_sharp", "php", "html", "javascript", "typescript", "tsx",
-          "css", "scss", "python", "lua", "json", "yaml", "json5",
-          "markdown", "markdown_inline", "terraform", "hcl",
-          "go", "gomod", "gowork", "c", "cpp", "rust", "bash",
-          "dockerfile", "toml", "sql", "regex", "vim",
-        })
-      end)
     end,
   },
 }
