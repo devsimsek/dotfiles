@@ -23,7 +23,19 @@ separately.
 ## Getting started
 
 Each tool's config lives in its own directory, so you can cherry-pick whatever
-you like instead of adopting my entire personality. Symlink the bits you want:
+you like instead of adopting my entire personality.
+
+**The easy way:**
+
+```bash
+./install.sh            # symlinks everything, backs up what you had
+./install.sh --dry-run  # preview first, touch nothing
+```
+
+It symlinks nvim, ghostty, tmux, fastfetch and starship into `~/.config`
+(or `~/.tmux.conf`), copies the zed config, and installs tpm for tmux.
+
+**The manual way:**
 
 ```bash
 ln -s ~/dotfiles/nvim      ~/.config/nvim
